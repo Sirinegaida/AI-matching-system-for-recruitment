@@ -1,0 +1,27 @@
+streamlit>=1.28.0
+pandas>=1.5.0
+numpy>=1.24.0
+plotly>=5.15.0
+matplotlib>=3.6.0
+
+# Database
+psycopg2-binary>=2.9.0
+sqlalchemy>=1.4.0
+
+# AI/ML
+openai>=1.0.0
+
+# Document processing
+pdfplumber>=0.9.0
+PyPDF2>=1.26.0
+python-docx>=0.8.11
+fitz>=0.8.0
+
+# AWS
+boto3>=1.28.0
+
+altair>=4.2.0
+numpy>=1.24.0
+
+pyspark==3.5.0
+pyarrow>=5.0.0

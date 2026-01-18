@@ -1,0 +1,19 @@
+CV PROCESSING SYSTEM ARCHITECTURE
+
+┌─ FRONTEND ─────────────────────────────────────┐
+│ Streamlit → Candidate/Client/Admin Dashboards  │
+└─────────────────┬───────────────────────────────┘
+                  │
+┌─ PROCESSING ────▼───────────────────────────────┐
+│ File Upload → Document Parser → LangChain       │
+│ → OpenAI GPT-4 → Vector Embeddings             │
+│ → Matching Engine → Job Recommendations        │
+└─────────────────┬───────────────────────────────┘
+                  │
+┌─ STORAGE ───────▼───────────────────────────────┐
+│ AWS S3 (Files) + PostgreSQL (Data)             │
+│ Tables: candidates, job_offers, job_matches     │
+│ Apache Spark (Analytics & Fast Processing)     │
+└─────────────────────────────────────────────────┘
+
+EXTERNAL: OpenAI API + AWS Services
